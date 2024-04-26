@@ -1,0 +1,450 @@
+:root {
+  --blue: #2B4C8F;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+h1,p {
+  margin: 0;
+}
+
+/** === WHATSAPP BUTTON */
+a.float-whatsapp-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+}
+
+a.float-whatsapp-btn img {
+  width: 50px;
+}
+
+/** === HEADER CONTENT === */
+header {
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 25px 104px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 720px;
+}
+
+header nav a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+header nav a.icon {
+  font-size: 2rem;
+}
+
+header nav a.hover-effect:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/** === BANNER CONTENT === */
+section.banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+  padding: 0 104px;
+  display: flex;
+}
+
+section.banner .texts {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.banner .texts h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+section.banner .texts p {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 0;
+}
+
+section.banner .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.banner .logo img {
+  width: 425px;
+  height: 425px;
+}
+
+/** BUY EASY BUTTON */
+a.buy-easy {
+  background: #2B4C8F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  padding: 11px 55px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  position: absolute;
+  top: 74%;
+  right: 40%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/** === ABOUT CONTENT === */
+section.about {
+  margin-top: 30px;
+  padding-left: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+section.about .image {
+  width: 40%;
+}
+
+section.about .image img {
+  width: 60%;
+}
+
+section.about .texts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.about .texts h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+section.about .texts p {
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+section.about .texts img {
+  width: 500px;
+  height: auto;
+}
+
+/** === CHOICE CONTENT === */
+section.choice {
+  padding: 0 100px 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.choice .texts {
+  display: flex;
+  flex-direction: column;
+}
+
+section.choice .texts h1 {
+  font-size: 3.6rem;
+}
+
+section.choice .texts p {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+section.choice .destinations {
+  display: flex;
+  gap: 40px;
+}
+
+section.choice .destinations a {
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 140px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+section.choice .destinations a h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+/** === TRAVEL CONTENT */
+section.travel {
+  margin-top: 130px;
+  padding: 0 100px;
+  display: flex;
+}
+
+section.travel img {
+  height: 750px;
+  width: 520px;
+}
+
+section.travel .texts {
+  margin-left: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.travel .texts .text h1 {
+  font-size: 3.2rem;
+}
+
+section.travel .texts .text p {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+/** === SUPPORT CONTENT === */
+section.support {
+  display: flex;
+  padding: 0 100px;
+  margin-top: 70px;
+}
+
+section.support .texts {
+  width: 50%;
+}
+
+section.support .texts h1 {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+section.support .texts p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+section.support .boxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+section.support .boxes .box {
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transition: 0.2s;
+}
+
+section.support .boxes .box span {
+  color: var(--blue);
+  font-size: 1.6rem;
+}
+
+section.support .boxes .box:hover {
+  background-color: var(--blue);
+}
+
+section.support .boxes .box:hover span {
+  color: #fff;
+}
+
+/** === OFFERS CONTENT === */
+section.offers {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+section.offers h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+section.offers .offers-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+section.offers .offers-tables a.mt {
+  margin-top: 95px;
+}
+
+/** === CHECKIN CONTENT === */
+section.checkin {
+  padding: 100px;
+}
+
+section.checkin h1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+section.checkin h1 img {
+  margin-left: 5px;
+}
+
+section.checkin p {
+  margin-top: 10px;
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+
+section.checkin .columns {
+  display: flex;
+  gap: 50px;
+}
+
+section.checkin .column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+section.checkin .column .image-box {
+  width: 240px;
+  height: 79px;
+  background-color: #F5F5F5;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+section.checkin .column .image-box:hover {
+  box-shadow: 4px 4px 4px rgba(43, 76, 143, 0.7);
+}
+
+/** === FOOTER CONTENT === */
+footer {
+  background-color: var(--blue);
+  padding: 75px 103px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+footer div span {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div.information {
+  width: 380px;
+}
+
+footer div.information span, a {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer div.information span.mt, a.mt {
+  margin-top: 6px;
+}
+
+footer div.information span svg {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+footer div.information a svg {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+footer div.information div.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 45px;
+  margin-bottom: 44px;
+}
+
+footer div.contacts iframe {
+  margin-top: auto;
+  height: 150px;
+  width: 400px;
+  border: 0;
+}
+
+footer div.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div.media a {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+footer div.promotions a {
+  background-color: #DF3224;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  width: 150px;
+  height: 55px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer div.promotions a:hover {
+  background-color: #25D366;
+}
+
+footer div.promotions a svg {
+  font-size: 2.2rem;
+}
+
+footer div.promotions img {
+  margin-top: 50px;
+}
