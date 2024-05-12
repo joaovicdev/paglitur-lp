@@ -297,6 +297,19 @@ section.offers .offers-tables a.mt {
   margin-top: 95px;
 }
 
+/** CARROUSEL CONTENT */
+section.carrousel {
+  background: url(../images/carrousel-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 100px;
+}
+
+section.carrousel .item {
+  max-width: 250px;
+}
+
 /** === CHECKIN CONTENT === */
 section.checkin {
   padding: 100px;
